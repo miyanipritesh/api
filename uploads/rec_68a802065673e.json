@@ -1,0 +1,219 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Classic Espresso",
+      "description": "A concentrated form of coffee brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans.",
+      "imageUrl": "https://images.unsplash.com/photo-1579888944880-d98341245702",
+      "ingredients": [
+        "18-21g finely ground coffee beans",
+        "Filtered water"
+      ],
+      "steps": [
+        "Grind coffee beans to a fine consistency",
+        "Tamp the grounds evenly in the portafilter",
+        "Lock the portafilter into the espresso machine",
+        "Extract for 25-30 seconds",
+        "Serve immediately in a pre-warmed cup"
+      ],
+      "preparationTime": 5,
+      "difficulty": 2,
+      "rating": 4.8
+    },
+    {
+      "id": "2",
+      "name": "Cappuccino",
+      "description": "An espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam.",
+      "imageUrl": "https://images.unsplash.com/photo-1572442388796-11668a67e53d",
+      "ingredients": [
+        "1 shot of espresso",
+        "Steamed milk",
+        "Milk foam",
+        "Cocoa powder (optional)"
+      ],
+      "steps": [
+        "Prepare a shot of espresso",
+        "Steam milk to create microfoam",
+        "Pour steamed milk over espresso",
+        "Top with milk foam",
+        "Dust with cocoa powder if desired"
+      ],
+      "preparationTime": 8,
+      "difficulty": 3,
+      "rating": 4.6
+    },
+    {
+      "id": "3",
+      "name": "Pour Over Coffee",
+      "description": "A manual coffee brewing method that produces a clean, crisp cup of coffee with distinct flavors.",
+      "imageUrl": "https://images.unsplash.com/photo-1551030173-122aabc4489c",
+      "ingredients": [
+        "30g medium-fine ground coffee",
+        "500ml filtered water",
+        "Paper filter",
+        "Pour over dripper"
+      ],
+      "steps": [
+        "Place filter in dripper and rinse with hot water",
+        "Add ground coffee and level the bed",
+        "Pour 60ml water and let bloom for 30 seconds",
+        "Slowly pour remaining water in circular motions",
+        "Wait for all water to drain through"
+      ],
+      "preparationTime": 10,
+      "difficulty": 4,
+      "rating": 4.7
+    },
+    {
+      "id": "4",
+      "name": "Turkish Coffee",
+      "description": "A traditional method of preparing coffee that originated in Turkey, known for its strong flavor and unique preparation method.",
+      "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
+      "ingredients": [
+        "2 tablespoons finely ground coffee",
+        "1 cup water",
+        "Sugar (optional)",
+        "Cardamom (optional)"
+      ],
+      "steps": [
+        "Add water to the cezve (Turkish coffee pot)",
+        "Add coffee and sugar if desired",
+        "Heat slowly until foam forms",
+        "Remove from heat when foam rises",
+        "Pour into cups, including the foam"
+      ],
+      "preparationTime": 7,
+      "difficulty": 3,
+      "rating": 4.5
+    },
+    {
+      "id": "5",
+      "name": "Cold Brew",
+      "description": "A smooth, less acidic coffee made by steeping coarsely ground beans in cold water for an extended period.",
+      "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd",
+      "ingredients": [
+        "1 cup coarsely ground coffee",
+        "4 cups cold water",
+        "Large jar or pitcher",
+        "Fine mesh strainer"
+      ],
+      "steps": [
+        "Combine coffee grounds and water in jar",
+        "Stir to ensure all grounds are wet",
+        "Cover and let steep for 12-24 hours",
+        "Strain through fine mesh",
+        "Dilute with water or milk to taste"
+      ],
+      "preparationTime": 1440,
+      "difficulty": 1,
+      "rating": 4.9
+    },
+    {
+      "id": "6",
+      "name": "Vietnamese Iced Coffee",
+      "description": "A sweet and strong coffee drink made with dark roast coffee and sweetened condensed milk.",
+      "imageUrl": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+      "ingredients": [
+        "2 tablespoons dark roast coffee",
+        "2 tablespoons sweetened condensed milk",
+        "Hot water",
+        "Ice cubes"
+      ],
+      "steps": [
+        "Add condensed milk to glass",
+        "Brew coffee using Vietnamese filter",
+        "Pour hot coffee over condensed milk",
+        "Stir well to combine",
+        "Add ice and serve"
+      ],
+      "preparationTime": 10,
+      "difficulty": 2,
+      "rating": 4.7
+    },
+    {
+      "id": "7",
+      "name": "Affogato",
+      "description": "An Italian dessert coffee made by pouring a shot of hot espresso over a scoop of vanilla ice cream.",
+      "imageUrl": "https://images.unsplash.com/photo-1579888944880-d98341245702",
+      "ingredients": [
+        "1 shot of espresso",
+        "1 scoop vanilla ice cream",
+        "Chocolate shavings (optional)"
+      ],
+      "steps": [
+        "Place vanilla ice cream in serving glass",
+        "Prepare a shot of espresso",
+        "Pour hot espresso over ice cream",
+        "Garnish with chocolate shavings",
+        "Serve immediately"
+      ],
+      "preparationTime": 5,
+      "difficulty": 1,
+      "rating": 4.8
+    },
+    {
+      "id": "8",
+      "name": "Moka Pot Coffee",
+      "description": "A stovetop coffee maker that produces a strong, espresso-like coffee using steam pressure.",
+      "imageUrl": "https://images.unsplash.com/photo-1517663154410-3d881b7e1e7d",
+      "ingredients": [
+        "Finely ground coffee",
+        "Water",
+        "Moka pot"
+      ],
+      "steps": [
+        "Fill bottom chamber with hot water",
+        "Add coffee to filter basket",
+        "Assemble Moka pot",
+        "Place on stove over medium heat",
+        "Remove from heat when coffee stops flowing"
+      ],
+      "preparationTime": 8,
+      "difficulty": 3,
+      "rating": 4.6
+    },
+    {
+      "id": "9",
+      "name": "French Press Coffee",
+      "description": "A brewing device that produces a rich, full-bodied coffee by steeping grounds in hot water.",
+      "imageUrl": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+      "ingredients": [
+        "Coarsely ground coffee",
+        "Hot water",
+        "French press"
+      ],
+      "steps": [
+        "Add coffee to French press",
+        "Pour hot water over grounds",
+        "Stir gently",
+        "Let steep for 4 minutes",
+        "Press plunger down slowly"
+      ],
+      "preparationTime": 6,
+      "difficulty": 2,
+      "rating": 4.7
+    },
+    {
+      "id": "10",
+      "name": "Aeropress Coffee",
+      "description": "A versatile brewing method that produces a clean, smooth cup of coffee using air pressure.",
+      "imageUrl": "https://images.unsplash.com/photo-1517663154410-3d881b7e1e7d",
+      "ingredients": [
+        "Medium-fine ground coffee",
+        "Hot water",
+        "Aeropress",
+        "Filter paper"
+      ],
+      "steps": [
+        "Place filter in cap",
+        "Add coffee to chamber",
+        "Pour hot water and stir",
+        "Insert plunger and wait",
+        "Press down slowly"
+      ],
+      "preparationTime": 3,
+      "difficulty": 3,
+      "rating": 4.8
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+    "app_list": [
+        {
+            "app_name": "ColorNote Notepad Notes",
+            "console_name": "Notes",
+            "package_name": "com.socialnmobile.dictapps.notepad.color.note",
+            "keyword": "com.socialnmobile.dictapps.notepad.color.note",
+            "app_use_type": 1,
+            "download_type": 3,
+            "daily_limit": 30,
+            "total_limit": 20,
+            "daily_app_use_limit": 30,
+            "app_status": 1,
+            "recording_file_1": null,
+            "recording_file_2": null,
+            "id": 1
+        },
+        {
+            "app_name": "Notepad - Notes\u3001Todo\u3001Memo",
+            "console_name": "Visha Group",
+            "package_name": "com.transsion.notebook",
+            "keyword": "com.transsion.notebook",
+            "app_use_type": 2,
+            "download_type": 5,
+            "daily_limit": 30,
+            "total_limit": 20,
+            "daily_app_use_limit": 0,
+            "app_status": 2,
+            "recording_file_1": "rec_3_10-09-2025_12-33-58_2ded35ab.json",
+            "recording_file_2": "rec_3_10-09-2025_12-34-36_304685cb.json",
+            "id": 2
+        }
+    ]
+}

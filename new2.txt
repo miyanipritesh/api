@@ -1,0 +1,78 @@
+<?php
+header("Content-Type: application/json");
+
+// JSON file path
+$jsonFile = __DIR__ . "/data_app_list.json";
+
+// Upload directory
+$uploadDir = __DIR__ . "/uploads/";
+
+// Ensure directory exists
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0777, true);
+}
+
+// Set timezone to India
+date_default_timezone_set("Asia/Kolkata");
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['id']) && isset($_FILES['file'])) {
+        $id = intval($_POST['id']);
+        $file = $_FILES['file'];
+
+        // Load JSON first (before uploading file)
+        if (file_exists($jsonFile)) {
+            $json = file_get_contents($jsonFile);
+            $data = json_decode($json, true);
+        } else {
+            echo json_encode(["message" => "JSON file not found", "file" => null]);
+            exit;
+        }
+
+        // Check if app with given ID exists
+        $appIndex = null;
+        foreach ($data["app_list"] as $index => $app) {
+            if ($app["id"] == $id) {
+                $appIndex = $index;
+                break;
+            }
+        }
+
+        if ($appIndex === null) {
+            echo json_encode(["message" => "App ID not found", "file" => null]);
+            exit;
+        }
+
+        // Generate unique filename => rec_{id}_{date_time}_{uniqid}.{ext}
+        $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
+        $timestamp = date("Y-m-d_H-i-s"); // Indian time
+        $uniqueHash = uniqid(); // unique random string
+// Short unique hash (8 characters)
+//$shortHash = substr(uniqid(), -8);
+        $fileName = "rec_" . $id . "_" . $timestamp . "_" . $uniqueHash . "." . $ext;
+        $filePath = $uploadDir . $fileName;
+
+        if (move_uploaded_file($file['tmp_name'], $filePath)) {
+            // Update the JSON data
+            if (empty($data["app_list"][$appIndex]["recording_file_1"])) {
+                $data["app_list"][$appIndex]["recording_file_1"] = $fileName;
+            } else {
+                $data["app_list"][$appIndex]["recording_file_2"] = $fileName;
+            }
+
+            file_put_contents($jsonFile, json_encode($data, JSON_PRETTY_PRINT));
+
+            echo json_encode([
+                "message" => "File uploaded successfully",
+                "file" => $fileName
+            ]);
+        } else {
+            echo json_encode(["message" => "File upload failed", "file" => null]);
+        }
+
+    } else {
+        echo json_encode(["message" => "Invalid request", "file" => null]);
+    }
+} else {
+    echo json_encode(["message" => "Only POST method allowed", "file" => null]);
+}
